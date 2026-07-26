@@ -1,0 +1,179 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#EAF6FF,#F6F0FF);
+}
+
+/* Navbar */
+
+.navbar{
+    background:linear-gradient(90deg,#5B86E5,#7F7FD5);
+    padding:15px 0;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.navbar-brand{
+    font-size:28px;
+    font-weight:700;
+}
+
+.navbar .btn{
+    border-radius:30px;
+    padding:8px 22px;
+    font-weight:500;
+}
+
+/* Hero */
+
+.hero{
+    padding:90px 0;
+}
+
+.hero h1{
+    font-size:52px;
+    font-weight:700;
+    color:#2d3748;
+}
+
+.hero p{
+    font-size:18px;
+    color:#555;
+    line-height:30px;
+}
+
+.hero i{
+    font-size:180px;
+    color:#6C63FF;
+}
+.hero-img{
+    max-width:480px;
+    transition:.3s;
+}
+
+.hero-img:hover{
+    transform:scale(1.02);
+}
+
+/* Button */
+
+.btn-warning{
+    border-radius:30px;
+    padding:12px 28px;
+    transition:.3s;
+}
+
+.btn-warning:hover{
+    transform:translateY(-3px);
+}
+
+/* Section Heading */
+
+h2{
+    font-weight:700;
+    color:#2d3748;
+}
+
+/* Cards */
+
+.card{
+    border:none;
+    border-radius:20px;
+    transition:all .3s ease;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.action-btn{
+    width:100%;
+    margin-bottom:12px;
+    transition:all .3s ease;
+}
+
+.action-btn:hover{
+    transform:scale(1.03);
+}
+
+.action-card{
+    position:sticky;
+    top:20px;
+}
+
+canvas{
+    width:100%;
+    max-width:500px;
+    height:220px;
+    display:block;
+    margin:auto;
+}
+
+.summary-card{
+    margin-top:25px;
+}
+
+.fade-card{
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* About */
+
+.about{
+    background:#ffffff;
+    border-radius:20px;
+    padding:60px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+/* Footer */
+
+footer{
+    margin-top:60px;
+    background:linear-gradient(90deg,#5B86E5,#7F7FD5);
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+.hero-img{
+    max-width:500px;
+}
+.hero-img{
+    max-width:500px;
+    transition:0.3s;
+}
+
+.hero-img:hover{
+    transform:scale(1.03);
+}
+.btn-outline-light{
+    border-radius:30px;
+    padding:8px 22px;
+}
+
+.btn-warning{
+    border-radius:30px;
+    padding:8px 22px;
+}
