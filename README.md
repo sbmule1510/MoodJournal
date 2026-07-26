@@ -1,69 +1,109 @@
-# CodeIgniter 4 Application Starter
+# Mood Journal – Mental Wellness Tracker
 
-## What is CodeIgniter?
+## Project Overview
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+Mood Journal is a web-based Mental Wellness Tracking System developed using CodeIgniter 4 and MySQL. It allows users to register, log in, record their daily moods, write journal entries, view mood history, track weekly mood reports, and receive wellness suggestions. The application helps users monitor their emotional well-being and build healthy daily habits.
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## Features
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+- User Registration
+- User Login & Logout
+- Daily Mood Selection
+- Mood Journal Writing
+- Mood History
+- Weekly Mood Report
+- Mood Score Display
+- Wellness Resources
+- About Page
+- User Dashboard
+- Secure Session Management
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+## Technologies Used
+### Frontend
+- HTML5
+- CSS3
+- Bootstrap 5
+- JavaScript
+### Backend
+- PHP
+- CodeIgniter 4 (MVC Framework)
+### Database
+- MySQL
+### IDE
+- Visual Studio Code
+### Server
+- XAMPP (Apache & MySQL)
+### Version Control
+- Git
+- GitHub
 
-## Installation & updates
+## 📂 Project Structure
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+MoodJournal/
+├── app/
+│   ├── Controllers/
+│   ├── Models/
+│   ├── Views/
+├── public/
+│   ├── css/
+│   ├── images/
+├── writable/
+├── system/
+├── .env
+├── composer.json
+├── README.md
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+## Software Requirements
 
-## Setup
+- PHP 8.1 or above
+- CodeIgniter 4
+- MySQL
+- XAMPP
+- Visual Studio Code
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+## How to Run the Project
 
-## Important Change with index.php
+### Step 1
+Download or clone the project from GitHub.
+### Step 2
+Copy the project folder into the **htdocs** folder of XAMPP.
+### Step 3
+Start **Apache** and **MySQL** from the XAMPP Control Panel.
+### Step 4
+Create a database named:
+moodjournal
+### Step 5
+Import the provided SQL file into phpMyAdmin.
+### Step 6
+Update the database configuration in the `.env` file.
+### Step 7
+Open the project in Visual Studio Code.
+### Step 8
+Run the CodeIgniter development server.
+php spark serve
+### Step 9
+Open the application in your browser.
+Example:
+http://localhost:8080
+### Step 10
+Register a new account.
+### Step 11
+Login using your credentials.
+### Step 12
+Select your daily mood and write a journal entry.
+### Step 13
+View your Dashboard, Mood History, Weekly Report, and Wellness Resources.
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+## Database
+MySQL is used to store:
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+- User Information
+- Mood Records
+- Journal Entries
+- Wellness Resources
 
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Server Requirements
-
-PHP version 8.2 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - The end of life date for PHP 8.1 was December 31, 2025.
-> - If you are still using below PHP 8.2, you should upgrade immediately.
-> - The end of life date for PHP 8.2 will be December 31, 2026.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+### Tables
+- users
+- moods
+- journals
+- resources
