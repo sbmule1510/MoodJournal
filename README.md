@@ -36,23 +36,7 @@ Mood Journal is a web-based Mental Wellness Tracking System developed using Code
 ### Version Control
 - Git
 - GitHub
-
-## 📂 Project Structure
-
-MoodJournal/
-├── app/
-│   ├── Controllers/
-│   ├── Models/
-│   ├── Views/
-├── public/
-│   ├── css/
-│   ├── images/
-├── writable/
-├── system/
-├── .env
-├── composer.json
-├── README.md
-
+- 
 ## Software Requirements
 
 - PHP 8.1 or above
@@ -61,49 +45,61 @@ MoodJournal/
 - XAMPP
 - Visual Studio Code
 
-## How to Run the Project
+## How I Run the Project
 
-### Step 1
-Download or clone the project from GitHub.
-### Step 2
-Copy the project folder into the **htdocs** folder of XAMPP.
-### Step 3
-Start **Apache** and **MySQL** from the XAMPP Control Panel.
-### Step 4
-Create a database named:
-moodjournal
-### Step 5
-Import the provided SQL file into phpMyAdmin.
-### Step 6
-Update the database configuration in the `.env` file.
-### Step 7
-Open the project in Visual Studio Code.
-### Step 8
-Run the CodeIgniter development server.
-php spark serve
-### Step 9
-Open the application in your browser.
-Example:
-http://localhost:8080
-### Step 10
-Register a new account.
-### Step 11
-Login using your credentials.
-### Step 12
-Select your daily mood and write a journal entry.
-### Step 13
-View your Dashboard, Mood History, Weekly Report, and Wellness Resources.
+#### Step 1
+I created the **MoodJournal** project in Visual Studio Code.
 
-## Database
-MySQL is used to store:
+#### Step 2
+I started Apache and MySQL using XAMPP.
 
-- User Information
-- Mood Records
-- Journal Entries
+#### Step 3
+I copied the project folder into the **htdocs** folder of XAMPP.
+
+#### Step 4
+I created the MySQL database named **moodjournal**.
+
+#### Step 5
+I imported the **moodjournal.sql** file into phpMyAdmin.
+
+#### Step 6
+I configured the database connection in the **.env** file.
+
+#### Step 7
+I developed the required pages:
+- Home
+- About
+- Login
+- Register
+- Dashboard
+- Add Mood
+- Mood History
 - Wellness Resources
 
-### Tables
-- users
-- moods
-- journals
-- resources
+#### Step 8
+I created the Controllers, Models, and Views using **CodeIgniter 4 MVC architecture**.
+
+#### Step 9
+I implemented session management for secure login and logout.
+
+#### Step 10
+I ran the project using the CodeIgniter development server.
+php spark serve
+
+#### Step 11
+I opened the application in the browser:
+http://localhost:8080
+
+#### Step 12
+I registered a new user account and logged in.
+
+#### Step 13
+I tested all features:
+- User Registration
+- User Login
+- Add Mood
+- Write Journal
+- View Mood History
+- View Weekly Mood Summary
+- Open Wellness Resources
+- Logout
